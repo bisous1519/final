@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+div,
+ul,
+li {
+  border: 1px solid #fff;
+}
+body {
+  background-image: url("./image/bottle-caps.png");
+  background-color: #2a2725;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: 300px;
+}
+.main__bg {
+  position: absolute;
+  top: 300px;
+  right: 0;
+}
+main .inner {
+  max-width: 1000px;
+}
+
+/* .main__top-left */
+.main__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  height: 570px;
+}
+.main__top-left {
+  flex: 0.6;
+  height: 100%;
+}
+.main__top-right {
+  flex: 0.4;
+  height: 100%;
+}
+.main__top-left .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__top-left .logo span {
+  color: #ecbf2e;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main__search-box {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.main__search-box input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  width: 400px;
+  color: #ddd;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.main__search-box input::placeholder {
+  color: #777;
+}
+.main__search-box input:focus {
+  width: 500px;
+}
+.main__search-box i {
+  background: #ddd;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.main__search-box i span {
+}
+.main__recom .main__title,
+.main__bottom .main__title {
+  color: #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: -2px -2px 1px #777;
+}
+.main__bottom .main__title {
+  font-size: 25px;
+}
+.main__recom .recom__wrapper {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+.recom__wrapper .recom__img {
+  height: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.recom__wrapper div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+.recom__wrapper .recom__title {
+  color: #ddd;
+  font-size: 17px;
+  font-weight: bold;
+}
+.recom__wrapper .recom__desc {
+  color: #ddd;
+  font-size: 15px;
+}
+.recom__wrapper .recom__more {
+  color: #777;
+  font-size: 15px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* .main__top-right */
+.main__top-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.right__nav {
+  margin-bottom: 75px;
+  margin-right: 50px;
+}
+.right__nav li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.right__nav li button {
+  width: 200px;
+  height: 40px;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.right__nav li button:hover {
+  background: #ecbf2e;
+}
+
+/* .main__bottom */
+.main__bottom p {
+}

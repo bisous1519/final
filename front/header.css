@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #2a2725;
+}
+header {
+  margin-top: 10px;
+}
+header::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.div-line {
+  width: 2px;
+  height: 25px;
+  border: none;
+  background: #333;
+  margin: 0 25px;
+}
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+.inner {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__left .header__logo {
+  display: block;
+  max-width: 130px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__left .header__nav,
+.header__right .header__nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header__left .header__nav li a,
+.header__right .header__nav li a {
+  font-size: 14px;
+}
+.header__left .header__nav li a:hover {
+  font-weight: bold;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+.header__right .nav__searchbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: -100px;
+  transition: all 0.3s;
+}
+.nav__searchbox input {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+  color: #ddd;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.nav__searchbox input:focus {
+  border-bottom: 1px solid #ddd;
+  width: 200px;
+}
+.nav__searchbox i {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.nav__searchbox i span {
+  font-size: 20px;
+  color: #ddd;
+}
