@@ -11,8 +11,12 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     />
     <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./mainPage.css" />
@@ -98,10 +102,13 @@
         <div class="main__bottom">
           <p>맥심의 맥주 순위</p>
           <h2 class="main__title">BEER OF HONER</h2>
-          <div class="bottom-middle">
+          <div class="bottom__middle">
             <div class="middle__left">
               <ul>
-                <li class=""><span>1</span><span>곰표맥주</span></li>
+                <li>
+                  <span class="rank__first-icon">1</span
+                  ><span class="rank__first-name">곰표맥주</span>
+                </li>
                 <li><span>2</span><span>곰표맥주</span></li>
                 <li><span>3</span><span>곰표맥주</span></li>
                 <li><span>4</span><span>곰표맥주</span></li>
@@ -109,35 +116,63 @@
               </ul>
             </div>
             <div class="middle__right">
-              <img src="./image/heineken.png" alt="winner-beer" />
-              <p>
-                시원하고 맛있고 어떠어떠한 맥주입니다.
-                정보접ㅇ보정보정보정보접ㅇ보정보정보정보접ㅇ보정보정보
-              </p>
-              <div>
-                <div>
-                  <i><span class="material-icons"> grade </span></i>
-                  <span>89점</span>
-                </div>
-                <h5 class="recom__more">이 맥주 보러가기 &Gt;</h5>
-              </div>
+              <ul>
+                <li>
+                  <img
+                    class="rank__beer-img"
+                    src="./image/heineken.png"
+                    alt="winner-beer"
+                  />
+                </li>
+                <li class="rank__beer-desc">
+                  시원하고 맛있고 어떠어떠한 맥주입니다.
+                  정보접ㅇ보정보정보정보접ㅇ보정보정보정보접ㅇ보정보정보
+                </li>
+                <li class="rank__beer-score">
+                  <div>
+                    <i><span class="material-icons"> grade </span></i>
+                    <span>&nbsp;&nbsp;89점</span>
+                  </div>
+                  <a class="recom__more" href="#">이 맥주 보러가기 &Gt;</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="bottom-bottom">
+          <div class="bottom__bottom">
             <div class="bottom__left">
               <ul>
-                <li class="bottom__title"></li>
-                <li class="bottom__img"></li>
-                <li class="bottom__name"></li>
-                <li class="bottom__more"></li>
+                <li class="main__title">MEN's CHOICE</li>
+                <li class="bottom__img">
+                  <img
+                    class="rank__beer-img"
+                    src="./image/heineken.png"
+                    alt="men's beer"
+                  />
+                </li>
+                <li class="bottom__name">
+                  <i class="fas fa-crown"></i> 곰표맥주
+                </li>
+                <li>
+                  <a class="recom__more" href="#">이 맥주 보러가기 &Gt;</a>
+                </li>
               </ul>
             </div>
             <div class="bottom__right">
               <ul>
-                <li class="bottom__title"></li>
-                <li class="bottom__img"></li>
-                <li class="bottom__name"></li>
-                <li class="bottom__more"></li>
+                <li class="main__title">WOMEN's CHOICE</li>
+                <li class="bottom__img">
+                  <img
+                    class="rank__beer-img"
+                    src="./image/heineken.png"
+                    alt="women's beer"
+                  />
+                </li>
+                <li class="bottom__name">
+                  <i class="fas fa-crown"></i> 곰표맥주
+                </li>
+                <li>
+                  <a class="recom__more" href="#">이 맥주 보러가기 &Gt;</a>
+                </li>
               </ul>
             </div>
           </div>
