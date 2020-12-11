@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MACSIM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./community.css" />
+    <!-- <link rel="stylesheet" href="./index copy.css" /> -->
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="inner">
+        <div class="header__left">
+          <a class="header__logo" href="#">
+            <img src="./image/macsimXy.png" alt="logo"
+          /></a>
+          <span class="div-line"></span>
+          <ul class="header__nav">
+            <li><a href="#">맥주검색</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">공동구매</a></li>
+            <li><a href="#">공지사항</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <div class="nav__searchbox">
+            <input type="text" />
+            <i><span class="material-icons"> search </span></i>
+          </div>
+          <ul class="header__nav">
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="inner">
+        <div class="fode__header">
+          <div>
+            <h1>COMMUNITY</h1>
+            <h2>FORUM</h2>
+          </div>
+          <a href="#">&lt; prev</a>
+        </div>
+
+        <!-- FORUM DETAIL BOX -->
+        <ul class="comm__items">
+          <li class="fode__info-wrapper">
+            <div class="img-wrapper">
+              <img src="./image/corona.jpg" alt="picture" />
+            </div>
+            <div class="fode__info-right">
+              <div class="item-top">
+                <p>Stout</p>
+                <div>
+                  <span>수정</span>
+                  <span>삭제</span>
+                  <!-- <span>신고</span> -->
+                  <small>2020-11-20</small>
+                </div>
+              </div>
+              <div class="forum-contents">
+                흑맥주는 흑흑흑 ㅏ까망까망망고망고 흐가흑자갈갈
+              </div>
+              <div class="item-bottom">
+                <div>
+                  <span class="fas fa-crown"></span>
+                  <span>user01</span>
+                </div>
+                <span>10 comments</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- FORUM DETAIL COMMENTS -->
+        <div class="fode__comments">
+          <h3>COMMENTS</h3>
+          <div>
+            <div class="fode__addco-wrapper">
+              <p id="comment-box">댓글 작성</p>
+              <div class="fode__input-box">
+                <input
+                  id="co-input-box"
+                  type="text"
+                  placeholder="내용을 입력해주세요"
+                />
+                <button>등록</button>
+              </div>
+            </div>
+            <ul class="fode__co-items">
+              <li class="co-contents">
+                <div class="fode__co-info">
+                  <p onclick="replayTo('beerbeer23');">beerbeer23</p>
+                  <div>
+                    <span>수정</span>
+                    <span>삭제</span>
+                    <!-- <span>신고</span> -->
+                    <small>2020-11-20 16:00</small>
+                  </div>
+                </div>
+                <div class="fode__co-con">흑맥주는 무슨맛인가요??</div>
+              </li>
+              <li class="co-contents">
+                <div class="fode__co-info">
+                  <p onclick="replayTo('beerbeer23');">beerbeer23</p>
+                  <div>
+                    <span>수정</span>
+                    <span>삭제</span>
+                    <!-- <span>신고</span> -->
+                    <small>2020-11-20 16:00</small>
+                  </div>
+                </div>
+                <div class="fode__co-con">흑맥주는 무슨맛인가요??</div>
+                <ul class="fode__re-items">
+                  <li class="co-contents">
+                    <div class="fode__co-info">
+                      <p onclick="replayTo('orange11');">orange11</p>
+                      <div>
+                        <span>수정</span>
+                        <span>삭제</span>
+                        <!-- <span>신고</span> -->
+                        <small>2020-11-20 16:00</small>
+                      </div>
+                    </div>
+                    <div class="fode__co-con">까만맛입니다.</div>
+                  </li>
+                  <li class="co-contents">
+                    <div class="fode__co-info">
+                      <p onclick="replayTo('orange11');">orange11</p>
+                      <div>
+                        <span>수정</span>
+                        <span>삭제</span>
+                        <!-- <span>신고</span> -->
+                        <small>2020-11-20 16:00</small>
+                      </div>
+                    </div>
+                    <div class="fode__co-con">까만맛입니다.</div>
+                  </li>
+                </ul>
+              </li>
+              <li class="co-contents">
+                <div class="fode__co-info">
+                  <p onclick="replayTo('beerbeer23');">beerbeer23</p>
+                  <div>
+                    <span>수정</span>
+                    <span>삭제</span>
+                    <!-- <span>신고</span> -->
+                    <small>2020-11-20 16:00</small>
+                  </div>
+                </div>
+                <div class="fode__co-con">흑맥주는 무슨맛인가요??</div>
+                <ul class="fode__re-items">
+                  <li class="co-contents">
+                    <div class="fode__co-info">
+                      <p onclick="replayTo('orange11');">orange11</p>
+                      <div>
+                        <span>수정</span>
+                        <span>삭제</span>
+                        <!-- <span>신고</span> -->
+                        <small>2020-11-20 16:00</small>
+                      </div>
+                    </div>
+                    <div class="fode__co-con">까만맛입니다.</div>
+                  </li>
+                  <li class="co-contents">
+                    <div class="fode__co-info">
+                      <p onclick="replayTo('orange11');">orange11</p>
+                      <div>
+                        <span>수정</span>
+                        <span>삭제</span>
+                        <!-- <span>신고</span> -->
+                        <small>2020-11-20 16:00</small>
+                      </div>
+                    </div>
+                    <div class="fode__co-con">까만맛입니다.</div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- COMMENT PAGING -->
+        <!-- <ul class="comm__paging">
+          <li>&lt;</li>
+          <li>1</li>
+          <li class="paging-active">2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>&gt;</li>
+        </ul> -->
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+  </body>
+  <script>
+    const coTitle = document.querySelector("#comment-box");
+    const replayTo = (userId) => {
+      //   console.log(userId);
+      coTitle.innerHTML =
+        "대댓글 작성 <b>@" +
+        userId +
+        "</b><button class='cancle-reply-btn' onclick='cancleReply();'>x</button>";
+      window.scrollTo(0, 420);
+      document.querySelector("#co-input-box").focus();
+    };
+    const cancleReply = () => {
+      coTitle.innerHTML = "댓글작성";
+    };
+  </script>
+</html>

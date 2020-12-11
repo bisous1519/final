@@ -1,0 +1,244 @@
+:root {
+  --color-text: #2c3e50;
+  --color-link: #3498db;
+  --color-link-bg: #3498db1f;
+  --color-red: #c0392b;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 20px 50px rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+.comments_section *,
+.comments_section *::after,
+.comments_section *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 50%;
+} */
+
+/* body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  color: var(--color-text);
+} */
+
+.comments_section ul,
+.comments_section li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.comments_section h1,
+.comments_section h2,
+.comments_section h3,
+.comments_section h4,
+.comments_section h5,
+.comments_section h6,
+.comments_section p,
+.comments_section section {
+  margin: 0;
+  padding: 0;
+}
+
+.comments_section button {
+  border: none;
+  background: none;
+  font-family: "Lato", sans-serif;
+  color: var(--color-text);
+}
+
+.comments_section .comment_list > li {
+  margin-bottom: 40px;
+}
+
+.comments_section {
+  width: 100%;
+  /* margin: 20px; */
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: var(--shadow-dark);
+  padding: 40px;
+  transform-origin: top left;
+  transform: scale(0.7);
+}
+
+.comments_section .no_comment_found {
+  font-size: 15px;
+  text-align: center;
+}
+
+.comments_section .comment_card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-light);
+  margin-bottom: 20px;
+}
+
+.comments_section .figure {
+  display: flex;
+  justify-content: start;
+  padding-bottom: 20px;
+  border-bottom: var(--line);
+}
+
+.comments_section .image {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comments_section .fig_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 5px 0;
+}
+
+.comments_section .name {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.comments_section .occupation {
+  font-size: 18px;
+  margin-bottom: auto;
+}
+
+.comments_section .date {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.comments_section .comment_text {
+  margin-left: 110px;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: var(--line);
+}
+
+.comments_section .comment_options {
+  margin-left: 110px;
+  padding: 10px 0;
+  display: flex;
+}
+
+.comments_section .comment_options button {
+  display: block;
+  padding: 10px;
+  font-size: 19px;
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+.comments_section .comment_options button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.comments_section .comment_options button:last-child {
+  margin-left: auto;
+}
+
+.comments_section .comment_options button:hover {
+  background: var(--color-link-bg);
+}
+
+.comments_section .comment_edit {
+  margin-left: 110px;
+}
+
+.comments_section .comment_edit_message {
+  font-size: 13px;
+  padding: 3px 0;
+}
+
+.comments_section textarea {
+  font-family: "Lato", sans-serif;
+  border: 1px solid var(--color-text);
+  width: 100%;
+  color: var(--color-text);
+  font-size: 25px;
+  padding: 15px;
+}
+
+.comments_section .comment_edit_options {
+  display: flex;
+  padding: 14px 0;
+  padding-bottom: 20px;
+}
+
+.comments_section .comment_edit_textarea {
+  padding-top: 20px;
+}
+
+.comments_section .comment_edit button {
+  display: block;
+  padding: 10px;
+  font-size: 19px;
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+.comments_section .comment_edit button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.comments_section .comment_edit button:hover {
+  background: var(--color-link-bg);
+}
+
+.comments_section .is_not_active {
+  display: none;
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+.comments_section .reply_not_active {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.comments_section .reply_active {
+  opacity: 1;
+  height: 100%;
+  transition: all 0.3s;
+}
+.comments_section textarea {
+  resize: none;
+}
+.comments_section button {
+  outline: none;
+}

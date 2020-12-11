@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="comments_section">
+      <ul class="comment_list">
+        <li>
+          <div
+            class="comment_card"
+            id="comment-1"
+            data-depth="0"
+            style="margin-left: 0rem"
+          >
+            <figure class="figure">
+              <img
+                class="image"
+                src="https://randomuser.me/api/portraits/women/26.jpg"
+                alt="Everett Romero"
+              />
+              <figcaption class="fig_caption">
+                <h5 class="name">Don Brooks</h5>
+                <h6 class="occupation">Self Employed</h6>
+                <p class="date">Friday 11th Devember, 2020</p>
+              </figcaption>
+            </figure>
+            <article class="comment_text">bummer</article>
+            <div class="comment_options">
+              <button
+                data-action="isEditing"
+                id="edit-btn"
+                style="pointer-events: auto; opacity: 1"
+                onclick="toggleEdit()"
+              >
+                Edit
+              </button>
+              <button
+                id="reply-btn"
+                data-action="isCommenting"
+                style="pointer-events: auto; opacity: 1"
+                onclick="toggleReply()"
+              >
+                Comment
+              </button>
+              <button
+                id="comment-open-btn"
+                data-action="show_all"
+                onclick="toggleReplyToggle()"
+              >
+                Comments
+              </button>
+            </div>
+
+            <!-- 댓글수정 -->
+            <div id="edit-comment" class="comment_edit is_not_active">
+              <textarea
+                name="comment_edit"
+                id="comment_edit"
+                class="comment_edit_textarea"
+                cols="0"
+                rows="0"
+                placeholder="수정"
+              ></textarea>
+              <div class="comment_edit_options">
+                <button data-action="submit">Submit</button>
+                <button data-action="cancle" onclick="toggleEdit()">
+                  Cancle
+                </button>
+              </div>
+            </div>
+
+            <!-- 대댓글작성 -->
+            <div id="add-rereply" class="comment_edit is_not_active">
+              <textarea
+                name="comment_edit"
+                id="comment_edit"
+                class="comment_edit_textarea"
+                cols="0"
+                rows="0"
+                placeholder="댓글작성"
+              ></textarea>
+              <div class="comment_edit_options">
+                <button data-action="submit">Submit</button>
+                <button data-action="cancle" onclick="toggleReply()">
+                  Cancle
+                </button>
+              </div>
+            </div>
+
+            <div id="rereply-list" class="comments reply_not_active">
+              <ul class="comment_list">
+                <li>
+                  <div
+                    class="comment_card"
+                    id="comment-8"
+                    data-depth="1"
+                    style="margin-left: 11rem"
+                  >
+                    <figure class="figure">
+                      <img
+                        class="image"
+                        src="https://randomuser.me/api/portraits/women/26.jpg"
+                        alt="Bill Elliott"
+                      />
+                      <figcaption class="fig_caption">
+                        <h5 class="name">Brennan Watts</h5>
+                        <h6 class="occupation">Self Employed</h6>
+                        <p class="date">Friday 11th Devember, 2020</p>
+                      </figcaption>
+                    </figure>
+                    <article class="comment_text">123123123</article>
+                  </div>
+
+                  <div
+                    class="comment_card"
+                    id="comment-9"
+                    data-depth="1"
+                    style="margin-left: 11rem"
+                  >
+                    <figure class="figure">
+                      <img
+                        class="image"
+                        src="https://randomuser.me/api/portraits/women/26.jpg"
+                        alt="Don Brooks"
+                      />
+                      <figcaption class="fig_caption">
+                        <h5 class="name">Don Brooks</h5>
+                        <h6 class="occupation">Free Lancer</h6>
+                        <p class="date">Friday 11th Devember, 2020</p>
+                      </figcaption>
+                    </figure>
+                    <article class="comment_text">123123123123213</article>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <script defer>
+    const commentBtn = document.querySelector("#comment-open-btn");
+
+    const toggleEdit = () => {
+      document.querySelector("#add-rereply").classList.add("is_not_active");
+      document.querySelector("#edit-comment").classList.toggle("is_not_active");
+    };
+
+    const toggleReply = () => {
+      document.querySelector("#edit-comment").classList.add("is_not_active");
+      document.querySelector("#add-rereply").classList.toggle("is_not_active");
+    };
+
+    const toggleReplyToggle = () => {
+      if (commentBtn.innerText === "Comments") {
+        commentBtn.innerText = "Hide Comments";
+      } else {
+        commentBtn.innerText = "Comments";
+      }
+      document.querySelector("#rereply-list").classList.toggle("reply_active");
+    };
+
+    // const openPopUp = () => {
+    //   window.open(
+    //     "https://react.vlpt.us/",
+    //     "리액트",
+    //     "width = 500, height = 700, top = 200, left = 300, location = no, menubar = no , toolbar=no"
+    //   );
+    // };
+    // openPopUp();
+  </script>
+</html>
