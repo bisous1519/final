@@ -410,12 +410,18 @@ li {
 .fode__re-items .fode__co-info {
   margin-top: 20px;
 }
-
 .co-contents .fode__co-info p {
   color: #ecbf2e;
   font-size: 19px;
+}
+.fode__co-items > .co-contents > .fode__co-info p {
   cursor: pointer;
 }
+
+* {
+  scroll-behavior: smooth;
+}
+
 .co-contents .fode__co-info > div {
   display: flex;
   gap: 10px;

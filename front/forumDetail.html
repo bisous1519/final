@@ -95,7 +95,7 @@
 
         <!-- FORUM DETAIL COMMENTS -->
         <div class="fode__comments">
-          <h3>COMMENTS</h3>
+          <h3 id="comment-top">COMMENTS</h3>
           <div>
             <div class="fode__addco-wrapper">
               <p id="comment-box">댓글 작성</p>
@@ -124,6 +124,7 @@
               <li class="co-contents">
                 <div class="fode__co-info">
                   <p onclick="replayTo('beerbeer23');">beerbeer23</p>
+                  <!-- <a href="#comment-top">beerbeer23</a> -->
                   <div>
                     <span>수정</span>
                     <span>삭제</span>
@@ -135,7 +136,7 @@
                 <ul class="fode__re-items">
                   <li class="co-contents">
                     <div class="fode__co-info">
-                      <p onclick="replayTo('orange11');">orange11</p>
+                      <p>orange11</p>
                       <div>
                         <span>수정</span>
                         <span>삭제</span>
@@ -147,7 +148,7 @@
                   </li>
                   <li class="co-contents">
                     <div class="fode__co-info">
-                      <p onclick="replayTo('orange11');">orange11</p>
+                      <p>orange11</p>
                       <div>
                         <span>수정</span>
                         <span>삭제</span>
@@ -173,7 +174,7 @@
                 <ul class="fode__re-items">
                   <li class="co-contents">
                     <div class="fode__co-info">
-                      <p onclick="replayTo('orange11');">orange11</p>
+                      <p>orange11</p>
                       <div>
                         <span>수정</span>
                         <span>삭제</span>
@@ -185,7 +186,7 @@
                   </li>
                   <li class="co-contents">
                     <div class="fode__co-info">
-                      <p onclick="replayTo('orange11');">orange11</p>
+                      <p>orange11</p>
                       <div>
                         <span>수정</span>
                         <span>삭제</span>
@@ -225,6 +226,9 @@
         userId +
         "</b><button class='cancle-reply-btn' onclick='cancleReply();'>x</button>";
       window.scrollTo(0, 420);
+      // window.scrollTo("#comment-top");
+      // window.scroll({ top: 420, left: 0, behavior: "smooth" });
+      // location.href = "#comment-top";
       document.querySelector("#co-input-box").focus();
     };
     const cancleReply = () => {
