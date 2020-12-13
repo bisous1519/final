@@ -156,3 +156,23 @@ main .inner h1 {
   width: 90px;
   height: 35px;
 }
+
+/* EDIT FORUM 포럼 */
+.editF__content .title-wrapper input {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  /* flex: 1; */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background: none;
+  color: #ddd;
+  /* resize: none; */
+  font-size: 15px;
+  outline: none;
+  /* line-height: 1.3; */
+  padding: 7px;
+}
+.editF__content .con-wrapper > div:nth-child(2) {
+  height: 135px;
+}
