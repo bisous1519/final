@@ -106,3 +106,30 @@ header .inner {
 main .inner {
   max-width: 1000px;
 }
+.btn {
+  width: 90px;
+  height: 35px;
+  color: #ddd;
+  background: none;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-small {
+  width: 70px;
+  height: 25px;
+}
+.btn-gray {
+  background: #6d6565;
+}
+.btn-lightgray {
+  background: #928888;
+}
+.btn-yellow {
+  background: #ecbf2e;
+  color: #2a2725;
+}
+.btn-bold {
+  font-weight: bold;
+}
